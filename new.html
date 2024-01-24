@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HUANG HENDY </title>
+        <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene>
+            <a-assets>
+                <img id="bricks" src="./Bricks_NRM.png">
+            </a-assets>
+
+
+            <a-plane color="#FFFFFF"
+                   src="./Bricks_COL.png"
+                   repeat="1 1"
+                   material="shader:standard; normalMap: ./Bricks_NRM.png;emissive:#000; side: front"
+                   normalScale="1 -1"
+                   width="10" height="4" depth="4"
+                   position="-2 1.5 -9"
+                   roughness="0.3">
+
+            </a-plane>
+
+            <a-plane color="#FFFFFF"
+            src="./Bricks_COL.png"
+            repeat="1 1"
+            material="shader:standard; normalMap: ./Bricks_NRM.png;emissive:#000; side: back"
+            normalScale="1 -1"
+            width="10" height="4" depth="4"
+            position="-2 1.5 -9"
+            roughness="0.3">
+
+     </a-plane>
+
+
+            <a-sky 
+            color="#000000">
+       </a-sky>aw
+
+
+
+
+        </a-scene>
+
+
+
+    </body>
+
+
+
+
+</html>
