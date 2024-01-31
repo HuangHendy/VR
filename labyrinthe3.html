@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene>
+            <a-assets>
+                <!-- MAPS MURS-->
+                <img id="ScifiNRM" src="./Scifi_normal.png">
+                <img id="ScifiAO" src="./Scifi_ao.png">
+
+
+
+                
+                <!-- TEXTURES MURS GRAFFITIS -->
+                <img id="w1" src="./w1.png">
+                <img id="w2" src="./w2.png">
+                <img id="w3" src="./w3.png">
+                <img id="w4" src="./w4.png">
+                <img id="w5" src="./w5.png">
+                <img id="w6" src="./w6.png">
+                <img id="w7" src="./w7.png">
+                <img id="w8" src="./w8.png">
+                <img id="w9" src="./w9.png">
+
+
+            </a-assets>
+
+
+
+
+            <!-- CAMERA -->
+            
+            <a-entity camera look-controls wasd-controls="acceleration: 5" position="0 1.6 0"></a-entity>
+
+
+            
+
+            <!-- MURS -->
+
+            <a-entity id="mur1" geometry="primitive: plane" position="0 1 -0.5" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w1; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur2" geometry="primitive: plane" rotation="0 90 0" position="0.5 1 0" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w3; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur3" geometry="primitive: plane"  position="0 1 0.5" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w9; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur4" geometry="primitive: plane" rotation="0 90 0" position="0.5 1 -1" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w2; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur5" geometry="primitive: plane" rotation="0 90 0" position="0.5 1 -1.75" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w4; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur6" geometry="primitive: plane"  position="1 1 -1.5" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w7; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur7" geometry="primitive: plane"  position="1.25 1 -1" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w8; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur8" geometry="primitive: plane" rotation="0 90 0" position="1.5 1 0" scale="2 2 1" material="shader:standard; repeat: 2 2; normalMap:#ScifiNRM; src: #w5; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 2 2;side: double"></a-entity>
+
+            <a-entity id="mur9" geometry="primitive: plane" rotation="0 90 0" position="1 1 -0.25" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w4; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur10" geometry="primitive: plane"  position="1.25 1 0.5" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w3; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur11" geometry="primitive: plane"  position="1.25 1 0.5" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w8; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur12" geometry="primitive: plane" rotation="0 90 0" position="1 1 1" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w9; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+        
+            <a-entity id="mur13" geometry="primitive: plane"  position="0.5 1 1" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w7; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur14" geometry="primitive: plane" rotation="0 90 0" position="0 1 1.5" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w6; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur15" geometry="primitive: plane" rotation="0 90 0" position="-0.5 1 0.5" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w3; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur16" geometry="primitive: plane" rotation="0 90 0" position="-0.5 1 1.25" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w2; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur17" geometry="primitive: plane" rotation="0 90 0" position="-0.5 1 -0.75" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w1; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur18" geometry="primitive: plane"  position="-0.5 1 -1" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w9; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur19" geometry="primitive: plane" rotation="0 90 0" position="0 1 -1.25" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w7; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur20" geometry="primitive: plane" rotation="0 90 0" position="-1 1 -1.25" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w4; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur21" geometry="primitive: plane" rotation="0 90 0" position="-0.5 1 -1.75" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w3; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur22" geometry="primitive: plane" rotation="0 90 0" position="-0.5 1 -1.75" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w2; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+            
+            <a-entity id="mur23" geometry="primitive: plane"  position="-1.25 1 -1.5" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w7; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur24" geometry="primitive: plane"  position="-1.25 1 -0.5" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w1; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur25" geometry="primitive: plane" rotation="0 90 0" position="-1.5 1 -1" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w8; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur26" geometry="primitive: plane" rotation="0 90 0" position="0.5 1 1.75" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w3; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur27" geometry="primitive: plane"  position="0.75 1 0" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w6; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur28" geometry="primitive: plane" rotation="0 90 0" position="-1 1 0.5" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w5; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur29" geometry="primitive: plane" rotation="0 90 0" position="-1 1 1.25" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w8; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur30" geometry="primitive: plane"  position="-1.25 1 1.5" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w4; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+            <a-entity id="mur31" geometry="primitive: plane" rotation="0 90 0" position="-1.5 1 1" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w5; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur32" geometry="primitive: plane"  position="-1.5 1 0" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w8; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur32" geometry="primitive: plane"  position="-1.5 1 0" scale="1 2 1" material="shader:standard; repeat: 1 2; normalMap:#ScifiNRM; src: #w8; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 1 2; side: double"></a-entity>
+
+            <a-entity id="mur33" geometry="primitive: plane"  position="1.75 1 1.5" scale="0.5 2 1" material="shader:standard; repeat: 0.5 2; normalMap:#ScifiNRM; src: #w7; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 0.5 2; side: double"></a-entity>
+
+
+
+
+            <!-- PIECE -->
+
+            <a-entity id="murA" geometry="primitive: plane" rotation="0 90 0" position="2 1 -0.25" scale="3.5 2 1" material="shader:standard; repeat: 3.5 1; normalMap:#ScifiNRM; src: #w1; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 3.5 1;side: double"></a-entity>
+
+            <a-entity id="murB" geometry="primitive: plane" rotation="0 90 0" position="-2 1 0" scale="4 2 1" material="shader:standard; repeat: 4 1; normalMap:#ScifiNRM; src: #w2; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 4 1; side: double"></a-entity>
+
+            <a-entity id="murC" geometry="primitive: plane"  position="0 1 -2" scale="4 2 1" material="shader:standard; repeat: 4 1; normalMap:#ScifiNRM; src: #w3; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 4 1; side: double"></a-entity>
+
+            <a-entity id="murD" geometry="primitive: plane"  position="0 1 2" scale="4 2 1" material="shader:standard; repeat: 4 1; normalMap:#ScifiNRM; src: #w1; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 4 1;side: double"></a-entity>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+            <!-- SOLS -->
+            <a-entity geometry="primitive: plane" rotation="-90 0 0" id="SOL" scale="4 4 0" material="shader:standard; repeat: 2 2; normalMap:#ScifiNRM; src: #w3; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 2 2; metalness : 1 ;side: front"></a-entity>
+
+            <a-entity geometry="primitive: plane" rotation="-90 0 0" position="0 2 0" visible="" id="PLAFOND" scale="4 4 0" material="shader:standard; repeat: 2 2; normalMap:#ScifiNRM; src: #w4; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 2 2;side: back"></a-entity>
+
+
+            <a-sky 
+                color="#000000">
+            </a-sky>
+        </a-scene>
+    </body>
+</html>
