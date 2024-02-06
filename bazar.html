@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene>
+            <a-assets>
+                <!-- MAPS MURS-->
+                <img id="ScifiNRM" src="./Scifi_normal.png">
+                <img id="ScifiAO" src="./Scifi_ao.png">
+                <img id="ScifiAL" src="./Scifi_albedo.png">
+
+               <!-- OBJETS -->
+
+               <a-asset-item id="bomb1" src="./bomb_a.glb"></a-asset-item>
+               <a-asset-item id="bomb2" src="./bomb_B.glb"></a-asset-item>
+               <a-asset-item id="bomb3" src="./fat_man_-_nuclear_bomb.glb"></a-asset-item>
+           
+               <a-asset-item id="bomb5" src="./nuclear_bomb.glb"></a-asset-item>
+               <a-asset-item id="bomb6" src="./simple_c4-_bomb.glb"></a-asset-item>
+               <a-asset-item id="bomb7" src="./time_bomb.glb"></a-asset-item>
+               <a-asset-item id="bomb8" src="./bomb.glb"></a-asset-item>
+
+            
+            </a-assets>
+            
+           <!-- BOMBES -->
+
+            <a-entity gltf-model="#bomb1" position="0.4 1 0.75" rotation="34 14 56" scale="0.009 0.009 0.009"></a-entity>
+            <a-entity gltf-model="#bomb2" position="0.1 0.4 0.3" rotation="55 23 46" scale="0.1 0.1 0.1"></a-entity>
+            <a-entity gltf-model="#bomb3" position="0.1 0.6 -1.3" rotation="55 23 46" scale="1.5 1.5 1.5"></a-entity>
+            <a-entity gltf-model="#bomb5" position="-0.7 0.6 0.25" rotation="95 12 84" scale="0.1 0.1 0.1"></a-entity>
+            <a-entity gltf-model="#bomb6" position="-0.26 1.5 0.82" rotation="25 58 37" scale="0.05 0.05 0.05"></a-entity>
+            <a-entity gltf-model="#bomb7" position="-1.6 0.6 1" rotation="95 12 84" scale="0.02 0.02 0.02"></a-entity>
+            <a-entity gltf-model="#bomb8" position="0.48 1.6 0.9" rotation="12.130 61.380 84.000" scale="1 1 1"></a-entity>
+
+
+
+
+
+
+            <!-- CAMERA -->
+            
+            <a-entity camera look-controls wasd-controls="acceleration: 5" position="0 1.6 0"></a-entity>
+
+
+            
+
+         
+
+        
+
+
+
+            <!-- PIECE -->
+
+            <a-entity id="murA" geometry="primitive: plane" rotation="0 90 0" position="2 1 -0.25" scale="3.5 2 1" material="shader:standard; repeat: 3.5 1; normalMap:#ScifiNRM; src:#ScifiAL;  ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 3.5 1; side: double ; metalness : 1"></a-entity>
+
+            <a-entity id="murB" geometry="primitive: plane" rotation="0 90 0" position="-2 1 0" scale="4 2 1" material="shader:standard; repeat: 4 1; normalMap:#ScifiNRM; src:#ScifiAL;  ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 4 1; side: double ;metalness : 1"></a-entity>
+
+            <a-entity id="murC" geometry="primitive: plane"  position="0 1 -2" scale="4 2 1" material="shader:standard; repeat: 4 1; normalMap:#ScifiNRM; src:#ScifiAL;  ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 4 1; side: double ;metalness : 1"></a-entity>
+
+            <a-entity id="murD" geometry="primitive: plane"  position="0 1 2" scale="4 2 1" material="shader:standard; repeat: 4 1; normalMap:#ScifiNRM; src:#ScifiAL;  ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 4 1; side: double ;metalness : 1"></a-entity>
+
+
+
+
+
+
+
+
+
+            <!-- SOLS -->
+            <a-entity geometry="primitive: plane" rotation="-90 0 0" id="SOL" scale="4 4 0" material="shader:standard; repeat: 2 2; normalMap:#ScifiNRM; src:#ScifiAL; ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 2 2; metalness : 1 ;side: double ;metalness : 1"></a-entity>
+
+            <a-entity geometry="primitive: plane" rotation="-90 0 0" position="0 2 0" visible="" id="PLAFOND" scale="4 4 0" material="shader:standard; repeat: 2 2; normalMap:#ScifiNRM; src:#ScifiAL;  ambientOcclusionMap:#ScifiAO; normalTextureRepeat: 2 2;side: double ;metalness : 1"></a-entity>
+
+
+            <a-sky 
+                color="#50ABE7">
+            </a-sky>
+        </a-scene>
+    </body>
+</html>
