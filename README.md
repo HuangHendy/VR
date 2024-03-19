@@ -4,4 +4,4 @@
 * [labyrinthe2](./labyrinthe2.html)
 * [labyrinthe3](./labyrinthe3.html)
 * [bazar](./bazar.html)
-* [test](./test.html)
+* [maquette](./maquetteA.html)
