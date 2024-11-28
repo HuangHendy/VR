@@ -7,4 +7,5 @@
 * [bazar2](./bazar2.html)
 * [maquette](./maquetteA.html)
 * [IAmFlying](./iamflying_full_etudiant.html)
+* [skybox](./skybox.html)
 
