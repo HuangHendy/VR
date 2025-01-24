@@ -10,6 +10,6 @@
 
 
 #### ressources
-* [image marker demo (pattern ratio 0.75)](.assets/images/demo.png)
+* [image marker demo (pattern ratio 0.75)](./assets/images/demo.png)
 * [pdf marker demo (pattern ratio 0.75)](./assets/pdf/demo.pdf)
 * [qr code generator](https://www.qr-code-generator.com/)
