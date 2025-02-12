@@ -11,4 +11,4 @@
 * [Marker](./AR_ARCADE/3_aframe_ar/0_marker_Hendy.html)
 * [1_link_direct](./AR_ARCADE/3_aframe_ar/1_href_direct.html)
 * [2_link_primitive](./AR_ARCADE/3_aframe_ar/2_href_primitive.html)
-* [ARCADE(./builds/laureline/index.html)
+* [ARCADE](./builds/laureline/index.html)
